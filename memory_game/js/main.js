@@ -31,8 +31,6 @@ function createBoard() {
 	}
 }
 
-createBoard();
-
 
 var cardsInPlay = [];
 
@@ -48,5 +46,20 @@ function flipCard() {
 	} else alert("Sorry, try again.");
 }
 
+function reload() {
+	window.location.reload(false);
+}
+
+createBoard();
 
 console.log(cardsInPlay);
+
+document.getElementById('refreshButton').onclick = reload;
+
+
+
+//function buttonRefresh() {
+	//var buttonElement = document.getElementById('refresh-button');
+	//document.getElementById('refresh-button').onclick = createBoard();
+	//buttonElement.addEventListener('click', createBoard);
+//}
